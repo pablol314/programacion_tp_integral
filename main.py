@@ -1,6 +1,7 @@
 import pandas as pd
 from core.logging_config import logger
 from preprocessing_data import preprocessing_data
+from sklearn.model_selection import train_test_split
 
 logging = logger
 
