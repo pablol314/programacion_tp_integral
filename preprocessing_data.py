@@ -31,7 +31,15 @@ def preprocessing_data(path_data='data/data.csv'):
     df['channel_type'] = df['channel_type'].astype('category')
     df['channel_name'] = df['channel_name'].astype('category')
 
-    # Creación de columnas adicionales
+    # Normalización temporal
+    logging.info("Normalizando la columna 'hour'...")
+    df['hour'] = df['datetime_now'].dt.floor('h')
+
+    # Filtrado de franjas representativas por canal
+    logging.info("Filtrando franjas representativas por canal...")
+    df['hour_count'] = df.groupby(['channel_name', 'hour'])['datetime_now'].transform('count')
+    avg_hour_count = df.groupby('channel_name')['hour_count'].transform('mean')
+    df = df[df['hour_count'] >= avg_hour_count]
     logging.info("Creando columnas de fecha, hora y día de la semana...")
     df['date'] = df['datetime_now'].dt.date
     df['hour'] = df['datetime_now'].dt.hour
