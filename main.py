@@ -77,7 +77,6 @@ X = df.drop(columns=['success'])
 y = df['success']
 arbol = construir_arbol(X, y)
 
-from sklearn.model_selection import train_test_split
 
 # Definir la clase objetivo
 df['success'] = (df['avg_concurrent_views'] > df['avg_concurrent_views'].median()).astype(int)
