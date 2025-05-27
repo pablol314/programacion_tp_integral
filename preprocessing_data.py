@@ -3,9 +3,9 @@ from core.logging_config import logger
 
 logging = logger
 
-try:
+def preprocessing_data(path_data='data/data.csv'):
     logging.info("Cargando el archivo CSV...")
-    df = pd.read_csv('data/data.csv')
+    df = pd.read_csv(path_data)
     logging.info(f"Archivo cargado correctamente con {df.shape[0]} filas y {df.shape[1]} columnas.")
 
     # Conversión de datetime
@@ -50,15 +50,10 @@ try:
     df = df[columns_of_interest]
     logging.info(f"Filtrado de columnas completado. Columnas actuales: {df.columns.tolist()}")
 
-    # Guardar archivo procesado
-    output_path = 'data/processed_data.csv'
-    df.to_csv(output_path, index=False)
-    logging.info(f"Archivo procesado guardado en: {output_path}")
 
     # Mostrar resumen final
     logging.info(f"Primeras filas del dataframe:\n{df.head()}")
     logging.info(f"Resumen estadístico:\n{df.describe(include='all')}")
     logging.info(f"Tipos de datos:\n{df.dtypes}")
 
-except Exception as e:
-    logging.error(f"Error durante el preprocesamiento: {e}")
+    return df
