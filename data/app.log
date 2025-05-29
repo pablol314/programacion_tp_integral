@@ -1,0 +1,222 @@
+2025-05-29 10:12:16|INFO|[logging_config.py:75|<module>()]:Logger inicializado correctamente.
+2025-05-29 10:12:17|INFO|[preprocessing_data.py:7|preprocessing_data()]:Cargando el archivo CSV...
+2025-05-29 10:12:18|INFO|[preprocessing_data.py:9|preprocessing_data()]:Archivo cargado correctamente con 321611 filas y 15 columnas.
+2025-05-29 10:12:18|INFO|[preprocessing_data.py:12|preprocessing_data()]:Convirtiendo 'datetime_now' a formato datetime...
+2025-05-29 10:12:18|INFO|[preprocessing_data.py:17|preprocessing_data()]:Valores nulos por columna:
+id                         0
+channel_name              13
+uploader_id               29
+title                      0
+like_count                 0
+concurrent_view_count      0
+view_count                 0
+datetime_now               0
+timestamp                  0
+date_only                  0
+time_only                  0
+thumbnail                  0
+live_link                160
+channel_type               0
+bq_update                  0
+dtype: int64
+2025-05-29 10:12:18|INFO|[preprocessing_data.py:23|preprocessing_data()]:Filas eliminadas por valores nulos: 13
+2025-05-29 10:12:18|INFO|[preprocessing_data.py:26|preprocessing_data()]:Convirtiendo 'concurrent_view_count' a tipo numérico...
+2025-05-29 10:12:18|INFO|[preprocessing_data.py:30|preprocessing_data()]:Convirtiendo 'channel_type' y 'channel_name' a tipo categoría...
+2025-05-29 10:12:18|INFO|[preprocessing_data.py:35|preprocessing_data()]:Creando columnas de fecha, hora y día de la semana...
+2025-05-29 10:12:18|INFO|[preprocessing_data.py:51|preprocessing_data()]:Filtrado de columnas completado. Columnas actuales: ['datetime_now', 'concurrent_view_count', 'channel_name', 'channel_type', 'date', 'hour', 'weekday']
+2025-05-29 10:12:18|INFO|[preprocessing_data.py:54|preprocessing_data()]:Primeras filas del dataframe:
+         datetime_now  concurrent_view_count channel_name channel_type        date  hour  weekday
+0 2025-04-03 08:25:58                    131    La Gaceta       Prensa  2025-04-03     8        3
+1 2025-04-03 08:32:05                    164    La Gaceta       Prensa  2025-04-03     8        3
+2 2025-04-03 08:38:11                    161    La Gaceta       Prensa  2025-04-03     8        3
+3 2025-04-03 08:44:17                    167    La Gaceta       Prensa  2025-04-03     8        3
+4 2025-04-03 08:50:25                    177    La Gaceta       Prensa  2025-04-03     8        3
+2025-05-29 10:12:18|INFO|[preprocessing_data.py:55|preprocessing_data()]:Resumen estadístico:
+                         datetime_now  concurrent_view_count   channel_name channel_type        date           hour        weekday
+count                          321598          321598.000000         321598       321598      321598  321598.000000  321598.000000
+unique                            NaN                    NaN            106            4          30            NaN            NaN
+top                               NaN                    NaN  Todo Noticias           TV  2025-04-21            NaN            NaN
+freq                              NaN                    NaN           8753       146913       14201            NaN            NaN
+mean    2025-04-17 03:35:17.247330560            5005.623944            NaN          NaN         NaN      12.177442       2.649124
+min               2025-04-01 00:02:51               0.000000            NaN          NaN         NaN       0.000000       0.000000
+25%        2025-04-10 18:05:48.500000              66.000000            NaN          NaN         NaN       7.000000       1.000000
+50%        2025-04-17 10:43:15.500000             588.000000            NaN          NaN         NaN      12.000000       2.000000
+75%     2025-04-23 23:34:24.750000128            3433.000000            NaN          NaN         NaN      18.000000       4.000000
+max               2025-04-30 23:58:57          263888.000000            NaN          NaN         NaN      23.000000       6.000000
+std                               NaN           12883.397842            NaN          NaN         NaN       6.532787       1.931978
+2025-05-29 10:12:18|INFO|[preprocessing_data.py:56|preprocessing_data()]:Tipos de datos:
+datetime_now             datetime64[ns]
+concurrent_view_count             int64
+channel_name                   category
+channel_type                   category
+date                             object
+hour                              int32
+weekday                           int32
+dtype: object
+2025-05-29 10:12:19|INFO|[preprocessing_data.py:60|preprocessing_data()]:Archivo CSV exportado: output_datos_filtrados.csv
+2025-05-29 10:16:45|INFO|[logging_config.py:75|<module>()]:Logger inicializado correctamente.
+2025-05-29 10:16:46|INFO|[preprocessing_data.py:7|preprocessing_data()]:Cargando el archivo CSV...
+2025-05-29 10:16:47|INFO|[preprocessing_data.py:9|preprocessing_data()]:Archivo cargado correctamente con 321611 filas y 15 columnas.
+2025-05-29 10:16:47|INFO|[preprocessing_data.py:12|preprocessing_data()]:Convirtiendo 'datetime_now' a formato datetime...
+2025-05-29 10:16:47|INFO|[preprocessing_data.py:17|preprocessing_data()]:Valores nulos por columna:
+id                         0
+channel_name              13
+uploader_id               29
+title                      0
+like_count                 0
+concurrent_view_count      0
+view_count                 0
+datetime_now               0
+timestamp                  0
+date_only                  0
+time_only                  0
+thumbnail                  0
+live_link                160
+channel_type               0
+bq_update                  0
+dtype: int64
+2025-05-29 10:16:47|INFO|[preprocessing_data.py:23|preprocessing_data()]:Filas eliminadas por valores nulos: 13
+2025-05-29 10:16:47|INFO|[preprocessing_data.py:26|preprocessing_data()]:Convirtiendo 'concurrent_view_count' a tipo numérico...
+2025-05-29 10:16:47|INFO|[preprocessing_data.py:30|preprocessing_data()]:Convirtiendo 'channel_type' y 'channel_name' a tipo categoría...
+2025-05-29 10:16:47|INFO|[preprocessing_data.py:35|preprocessing_data()]:Creando columnas de fecha, hora y día de la semana...
+2025-05-29 10:16:48|INFO|[preprocessing_data.py:51|preprocessing_data()]:Filtrado de columnas completado. Columnas actuales: ['datetime_now', 'concurrent_view_count', 'channel_name', 'channel_type', 'date', 'hour', 'weekday']
+2025-05-29 10:16:48|INFO|[preprocessing_data.py:54|preprocessing_data()]:Primeras filas del dataframe:
+         datetime_now  concurrent_view_count channel_name channel_type        date  hour  weekday
+0 2025-04-03 08:25:58                    131    La Gaceta       Prensa  2025-04-03     8        3
+1 2025-04-03 08:32:05                    164    La Gaceta       Prensa  2025-04-03     8        3
+2 2025-04-03 08:38:11                    161    La Gaceta       Prensa  2025-04-03     8        3
+3 2025-04-03 08:44:17                    167    La Gaceta       Prensa  2025-04-03     8        3
+4 2025-04-03 08:50:25                    177    La Gaceta       Prensa  2025-04-03     8        3
+2025-05-29 10:16:48|INFO|[preprocessing_data.py:55|preprocessing_data()]:Resumen estadístico:
+                         datetime_now  concurrent_view_count   channel_name channel_type        date           hour        weekday
+count                          321598          321598.000000         321598       321598      321598  321598.000000  321598.000000
+unique                            NaN                    NaN            106            4          30            NaN            NaN
+top                               NaN                    NaN  Todo Noticias           TV  2025-04-21            NaN            NaN
+freq                              NaN                    NaN           8753       146913       14201            NaN            NaN
+mean    2025-04-17 03:35:17.247330560            5005.623944            NaN          NaN         NaN      12.177442       2.649124
+min               2025-04-01 00:02:51               0.000000            NaN          NaN         NaN       0.000000       0.000000
+25%        2025-04-10 18:05:48.500000              66.000000            NaN          NaN         NaN       7.000000       1.000000
+50%        2025-04-17 10:43:15.500000             588.000000            NaN          NaN         NaN      12.000000       2.000000
+75%     2025-04-23 23:34:24.750000128            3433.000000            NaN          NaN         NaN      18.000000       4.000000
+max               2025-04-30 23:58:57          263888.000000            NaN          NaN         NaN      23.000000       6.000000
+std                               NaN           12883.397842            NaN          NaN         NaN       6.532787       1.931978
+2025-05-29 10:16:48|INFO|[preprocessing_data.py:56|preprocessing_data()]:Tipos de datos:
+datetime_now             datetime64[ns]
+concurrent_view_count             int64
+channel_name                   category
+channel_type                   category
+date                             object
+hour                              int32
+weekday                           int32
+dtype: object
+2025-05-29 10:16:48|INFO|[preprocessing_data.py:60|preprocessing_data()]:Archivo CSV exportado: output_datos_filtrados.csv
+2025-05-29 10:42:46|INFO|[logging_config.py:75|<module>()]:Logger inicializado correctamente.
+2025-05-29 10:42:47|INFO|[preprocessing_data.py:7|preprocessing_data()]:Cargando el archivo CSV...
+2025-05-29 10:42:48|INFO|[preprocessing_data.py:9|preprocessing_data()]:Archivo cargado correctamente con 321611 filas y 15 columnas.
+2025-05-29 10:42:48|INFO|[preprocessing_data.py:12|preprocessing_data()]:Convirtiendo 'datetime_now' a formato datetime...
+2025-05-29 10:42:48|INFO|[preprocessing_data.py:17|preprocessing_data()]:Valores nulos por columna:
+id                         0
+channel_name              13
+uploader_id               29
+title                      0
+like_count                 0
+concurrent_view_count      0
+view_count                 0
+datetime_now               0
+timestamp                  0
+date_only                  0
+time_only                  0
+thumbnail                  0
+live_link                160
+channel_type               0
+bq_update                  0
+dtype: int64
+2025-05-29 10:42:48|INFO|[preprocessing_data.py:23|preprocessing_data()]:Filas eliminadas por valores nulos: 13
+2025-05-29 10:42:48|INFO|[preprocessing_data.py:26|preprocessing_data()]:Convirtiendo 'concurrent_view_count' a tipo numérico...
+2025-05-29 10:42:48|INFO|[preprocessing_data.py:30|preprocessing_data()]:Convirtiendo 'channel_type' y 'channel_name' a tipo categoría...
+2025-05-29 10:42:48|INFO|[preprocessing_data.py:35|preprocessing_data()]:Creando columnas de fecha, hora y día de la semana...
+2025-05-29 10:42:48|INFO|[preprocessing_data.py:51|preprocessing_data()]:Filtrado de columnas completado. Columnas actuales: ['datetime_now', 'concurrent_view_count', 'channel_name', 'channel_type', 'date', 'hour', 'weekday']
+2025-05-29 10:42:48|INFO|[preprocessing_data.py:54|preprocessing_data()]:Primeras filas del dataframe:
+         datetime_now  concurrent_view_count channel_name channel_type        date  hour  weekday
+0 2025-04-03 08:25:58                    131    La Gaceta       Prensa  2025-04-03     8        3
+1 2025-04-03 08:32:05                    164    La Gaceta       Prensa  2025-04-03     8        3
+2 2025-04-03 08:38:11                    161    La Gaceta       Prensa  2025-04-03     8        3
+3 2025-04-03 08:44:17                    167    La Gaceta       Prensa  2025-04-03     8        3
+4 2025-04-03 08:50:25                    177    La Gaceta       Prensa  2025-04-03     8        3
+2025-05-29 10:42:48|INFO|[preprocessing_data.py:55|preprocessing_data()]:Resumen estadístico:
+                         datetime_now  concurrent_view_count   channel_name channel_type        date           hour        weekday
+count                          321598          321598.000000         321598       321598      321598  321598.000000  321598.000000
+unique                            NaN                    NaN            106            4          30            NaN            NaN
+top                               NaN                    NaN  Todo Noticias           TV  2025-04-21            NaN            NaN
+freq                              NaN                    NaN           8753       146913       14201            NaN            NaN
+mean    2025-04-17 03:35:17.247330560            5005.623944            NaN          NaN         NaN      12.177442       2.649124
+min               2025-04-01 00:02:51               0.000000            NaN          NaN         NaN       0.000000       0.000000
+25%        2025-04-10 18:05:48.500000              66.000000            NaN          NaN         NaN       7.000000       1.000000
+50%        2025-04-17 10:43:15.500000             588.000000            NaN          NaN         NaN      12.000000       2.000000
+75%     2025-04-23 23:34:24.750000128            3433.000000            NaN          NaN         NaN      18.000000       4.000000
+max               2025-04-30 23:58:57          263888.000000            NaN          NaN         NaN      23.000000       6.000000
+std                               NaN           12883.397842            NaN          NaN         NaN       6.532787       1.931978
+2025-05-29 10:42:48|INFO|[preprocessing_data.py:56|preprocessing_data()]:Tipos de datos:
+datetime_now             datetime64[ns]
+concurrent_view_count             int64
+channel_name                   category
+channel_type                   category
+date                             object
+hour                              int32
+weekday                           int32
+dtype: object
+2025-05-29 10:45:59|INFO|[logging_config.py:75|<module>()]:Logger inicializado correctamente.
+2025-05-29 10:45:59|INFO|[preprocessing_data.py:7|preprocessing_data()]:Cargando el archivo CSV...
+2025-05-29 10:46:01|INFO|[preprocessing_data.py:9|preprocessing_data()]:Archivo cargado correctamente con 321611 filas y 15 columnas.
+2025-05-29 10:46:01|INFO|[preprocessing_data.py:12|preprocessing_data()]:Convirtiendo 'datetime_now' a formato datetime...
+2025-05-29 10:46:01|INFO|[preprocessing_data.py:17|preprocessing_data()]:Valores nulos por columna:
+id                         0
+channel_name              13
+uploader_id               29
+title                      0
+like_count                 0
+concurrent_view_count      0
+view_count                 0
+datetime_now               0
+timestamp                  0
+date_only                  0
+time_only                  0
+thumbnail                  0
+live_link                160
+channel_type               0
+bq_update                  0
+dtype: int64
+2025-05-29 10:46:01|INFO|[preprocessing_data.py:23|preprocessing_data()]:Filas eliminadas por valores nulos: 13
+2025-05-29 10:46:01|INFO|[preprocessing_data.py:26|preprocessing_data()]:Convirtiendo 'concurrent_view_count' a tipo numérico...
+2025-05-29 10:46:01|INFO|[preprocessing_data.py:30|preprocessing_data()]:Convirtiendo 'channel_type' y 'channel_name' a tipo categoría...
+2025-05-29 10:46:01|INFO|[preprocessing_data.py:35|preprocessing_data()]:Creando columnas de fecha, hora y día de la semana...
+2025-05-29 10:46:01|INFO|[preprocessing_data.py:51|preprocessing_data()]:Filtrado de columnas completado. Columnas actuales: ['datetime_now', 'concurrent_view_count', 'channel_name', 'channel_type', 'date', 'hour', 'weekday']
+2025-05-29 10:46:01|INFO|[preprocessing_data.py:54|preprocessing_data()]:Primeras filas del dataframe:
+         datetime_now  concurrent_view_count channel_name channel_type        date  hour  weekday
+0 2025-04-03 08:25:58                    131    La Gaceta       Prensa  2025-04-03     8        3
+1 2025-04-03 08:32:05                    164    La Gaceta       Prensa  2025-04-03     8        3
+2 2025-04-03 08:38:11                    161    La Gaceta       Prensa  2025-04-03     8        3
+3 2025-04-03 08:44:17                    167    La Gaceta       Prensa  2025-04-03     8        3
+4 2025-04-03 08:50:25                    177    La Gaceta       Prensa  2025-04-03     8        3
+2025-05-29 10:46:01|INFO|[preprocessing_data.py:55|preprocessing_data()]:Resumen estadístico:
+                         datetime_now  concurrent_view_count   channel_name channel_type        date           hour        weekday
+count                          321598          321598.000000         321598       321598      321598  321598.000000  321598.000000
+unique                            NaN                    NaN            106            4          30            NaN            NaN
+top                               NaN                    NaN  Todo Noticias           TV  2025-04-21            NaN            NaN
+freq                              NaN                    NaN           8753       146913       14201            NaN            NaN
+mean    2025-04-17 03:35:17.247330560            5005.623944            NaN          NaN         NaN      12.177442       2.649124
+min               2025-04-01 00:02:51               0.000000            NaN          NaN         NaN       0.000000       0.000000
+25%        2025-04-10 18:05:48.500000              66.000000            NaN          NaN         NaN       7.000000       1.000000
+50%        2025-04-17 10:43:15.500000             588.000000            NaN          NaN         NaN      12.000000       2.000000
+75%     2025-04-23 23:34:24.750000128            3433.000000            NaN          NaN         NaN      18.000000       4.000000
+max               2025-04-30 23:58:57          263888.000000            NaN          NaN         NaN      23.000000       6.000000
+std                               NaN           12883.397842            NaN          NaN         NaN       6.532787       1.931978
+2025-05-29 10:46:01|INFO|[preprocessing_data.py:56|preprocessing_data()]:Tipos de datos:
+datetime_now             datetime64[ns]
+concurrent_view_count             int64
+channel_name                   category
+channel_type                   category
+date                             object
+hour                              int32
+weekday                           int32
+dtype: object

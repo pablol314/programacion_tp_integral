@@ -1,0 +1,8 @@
+// Árbol de Decisión
+digraph {
+	0 [label="concurrent_view_count ≤ 549"]
+	1 [label="Clase = 0"]
+	0 -> 1 [label=True]
+	2 [label="Clase = 1"]
+	0 -> 2 [label=False]
+}
