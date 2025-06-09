@@ -17,12 +17,37 @@ Este proyecto tiene como objetivo desarrollar un modelo predictivo utilizando un
 
 ## 📁 Estructura del Proyecto
 
-- `informe.pdf`: Informe completo del trabajo práctico.
-- `arbol_decision.py`: Implementación del árbol de decisión desde cero.
-- `preprocesamiento.py`: Código para cargar, limpiar y transformar los datos.
-- `dataset/`: Carpeta con datos anonimizados usados en el análisis.
-- `notebooks/`: Análisis exploratorio, visualizaciones y pruebas.
-- `README.md`: Este archivo.
+| Archivo / Carpeta              | Descripción                                                                 |
+|-------------------------------|-----------------------------------------------------------------------------|
+| `main.py`                     | Script principal para ejecutar todo el flujo: carga, entrenamiento y salida. |
+| `modelo_arbol/arbol_decision.py` | Implementación del árbol de decisión desde cero.                           |
+| `preprocessing/`              | Módulos para cargar, limpiar y transformar datos.                           |
+| `data/data.csv`               | Dataset de transmisiones en vivo anonimizadas.                              |
+| `core/config.yaml`            | Configuración general del sistema (rutas, columnas clave, etc.).            |
+| `graficos.py`                 | Opcional: generación de visualizaciones.                                    |
+| `README.md`                   | Este archivo.                                                               |
+| `Informe...pdf`               | Informe final del trabajo práctico.                                         |
+
+---
+
+## 🚀 ¿Cómo usar este proyecto?
+
+### 📦 Requisitos
+
+- Python 3.7+
+- Pip con los siguientes paquetes:
+  ```bash
+  pip install -r requirements.txt
+
+---
+
+▶️ Ejecución
+
+Verificá que el archivo data/data.csv esté presente.
+
+Ejecutá el programa principal en terminal:
+
+python3 main.py
 
 ---
 
