@@ -43,7 +43,7 @@ Este proyecto tiene como objetivo desarrollar un modelo predictivo utilizando un
 
 ▶️ Ejecución
 
-Verificá que el archivo data/data.csv esté presente.
+Verificá que el archivo data/data.csv y processed_data.csv
 
 Ejecutá el programa principal en terminal:
 
